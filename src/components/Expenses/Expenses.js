@@ -3,6 +3,8 @@ import Card from '../UI/Card';
 import './Expenses.css'
 
 const Expenses = (props) =>{
+  //every expense item is separately defined at different array points in order to 
+  //be individually/statefully updated in ExpenseItem.js
     return (
     <Card className="expenses">
         <ExpenseItem 

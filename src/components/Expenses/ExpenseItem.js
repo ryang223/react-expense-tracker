@@ -7,7 +7,7 @@ import './ExpenseItem.css';
 const ExpenseItem = (props) => {
     
     const [title, setTitle] =  useState(props.title);
-
+    console.log('ExpenseItem evaluated by React');
         //the ES6 version of calling this function throws an unexpected token error so stick to 
         //the ES5 variant for compilation's sake
         function clickHandler() {
