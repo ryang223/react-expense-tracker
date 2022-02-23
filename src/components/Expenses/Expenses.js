@@ -1,12 +1,15 @@
-import ExpenseItem from './ExpenseItem'
+import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
-import './Expenses.css'
+import ExpensesFilter from './ExpensesFilter';
+import './Expenses.css'; 
 
 const Expenses = (props) =>{
   //every expense item is separately defined at different array points in order to 
   //be individually/statefully updated in ExpenseItem.js
-    return (
-    <Card className="expenses">
+  return (
+    <div>
+    <Card className='expenses'>
+      <ExpensesFilter />
         <ExpenseItem 
       title={props.items[0].title} 
       amount={props.items[0].amount} 
@@ -31,6 +34,7 @@ const Expenses = (props) =>{
       date={props.items[3].date}
       />
     </Card>
+    </div>
     );
 };
 
